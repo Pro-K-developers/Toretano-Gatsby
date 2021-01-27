@@ -7,6 +7,7 @@ import Footer from "../components/Footer/Footer"
 import Goods from "../components/Goods/Goods"
 import Header from "../components/Header/Header"
 import Top from "../components/Top/Top"
+
 export default function Home() {
   return (
     <>
