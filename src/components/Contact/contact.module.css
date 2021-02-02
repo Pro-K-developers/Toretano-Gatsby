@@ -1,4 +1,26 @@
 .container {
-  height: 400px;
   background-color: #eee;
+}
+li {
+  font-size: 40px;
+}
+.a {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 100px;
+}
+.b {
+  display: none;
+  list-style: none;
+  text-align: center;
+  margin-top: 40px;
+}
+@media screen and (max-width: 560px) {
+  .a {
+    display: none;
+  }
+  .b {
+    display: block;
+  }
 }

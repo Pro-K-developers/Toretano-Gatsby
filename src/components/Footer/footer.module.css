@@ -1,4 +1,30 @@
 .container {
-  height: 100px;
+  height: 110px;
   background-color: green;
+}
+.foot {
+  display: block;
+  white-space: nowrap;
+  color: white;
+  font-size: 14px;
+  line-height: 30px;
+  margin-left: 72vw;
+  padding-top: 15px;
+}
+.foot_mobile {
+  display: none;
+  white-space: nowrap;
+  color: white;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  padding-top: 15px;
+}
+@media screen and (max-width: 560px) {
+  .foot {
+    display: none;
+  }
+  .foot_mobile {
+    display: block;
+  }
 }
