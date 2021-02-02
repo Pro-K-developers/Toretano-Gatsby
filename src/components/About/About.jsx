@@ -5,13 +5,10 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 const About = () => {
-  const path = "about.jpg"
   const data = useStaticQuery(graphql`
     query Query {
       file(relativePath: { eq: "about.jpg" }) {
         childImageSharp {
-          # Specify the image processing specifications right in the query.
-          # Makes it trivial to update as your page's design changes.
           fixed(width: 300) {
             ...GatsbyImageSharpFixed
           }
@@ -21,6 +18,7 @@ const About = () => {
   `)
   const [isOpen, setIsOpen] = React.useState(false)
   // const [stateの名前, stateを更新する関数] = React.useState(stateの初期値)
+  // 真偽値が入る変数の名前にはis〇〇というふうに名前つけがち
   // https://reactjs.org/docs/hooks-state.html
 
   const handleClick = () => {
