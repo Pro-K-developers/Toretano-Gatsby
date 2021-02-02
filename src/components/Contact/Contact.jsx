@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div className={contactStyles.container}>
       <Title title="Contact" subtitle="もっと知りたい方はこちらも" />
-      <Img src="http://placehold.jp/{100}x{100}.png" />
+
       <ul className={contactStyles.a}>
         <li>Facebook</li>
         <li>Instagram</li>
