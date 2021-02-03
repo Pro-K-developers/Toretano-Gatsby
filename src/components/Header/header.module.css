@@ -18,3 +18,9 @@
   text-decoration: none;
   color: #fff;
 }
+
+.logo img {
+  width: 100px;
+  border-radius: 100%;
+  vertical-align: middle;
+}
