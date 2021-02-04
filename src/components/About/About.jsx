@@ -9,7 +9,7 @@ const About = () => {
     query Query {
       file(relativePath: { eq: "about.jpg" }) {
         childImageSharp {
-          fixed(width: 300) {
+          fixed(width: 637 height: 374) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -29,12 +29,22 @@ const About = () => {
   }
 
   return (
-    <div className={aboutStyles.container}>
+    <div className={aboutStyles.container} id="about-us">
       <Title title="About us" subtitle="とれたのについて" />
       <button onClick={() => handleClick()}>Click me!</button>
       {isOpen && <span>Open!</span>}
       {/* isOpenがtrueならば"&&"以降を表示するよ、という意味 */}
-      <Img fixed={data.file.childImageSharp.fixed} />
+      <div className={aboutStyles.aboutContainer}>
+        <Img className={aboutStyles.img} fixed={data.file.childImageSharp.fixed} />
+        <div className={aboutStyles.captionWrap}>
+          <p className={aboutStyles.caption}>
+          「とれたの」は、とれたてのくにたち野菜と<br />こだわりの地域物産を販売するお店です。
+          </p>
+          <p className={aboutStyles.caption}>
+          「むっさ21商店街」の中にあり、<br />「北口商店会」・「ダイヤ街」を合わせた<br />谷保三商店街の店主や地域住民の協力の下、<br />学生が運営しています。
+          </p>
+        </div>
+      </div>
     </div>
   )
 }

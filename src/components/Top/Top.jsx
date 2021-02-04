@@ -18,7 +18,7 @@ const Top = () => {
 
   return (
   <div className={topStyles.container}>
-    <Img fixed={data.file.childImageSharp.fixed} className = {topStyles.img} />
+    <Img fixed={data.file.childImageSharp.fixed} className={topStyles.img} />
   </div>
   );
 }

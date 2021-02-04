@@ -1,4 +1,35 @@
 .container {
-  height: 400px;
+  height: 800px;
   background-color: #eee;
+  width: 100vw;
+}
+
+.aboutContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 1rem;
+  margin-top: 3rem;
+}
+
+.img {
+  margin-bottom: 3em;
+}
+
+.captionWrap {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin: auto 0;
+}
+
+.caption {
+  font-size: 22px;
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: 1000px;
+  }
 }

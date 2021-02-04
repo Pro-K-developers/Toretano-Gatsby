@@ -19,8 +19,69 @@
   color: #fff;
 }
 
-.logo img {
+.nav li:hover {
+  font-weight: bold;
+}
+
+.logo {
   width: 100px;
   border-radius: 100%;
   vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    visibility: hidden;
+  }
+
+  .button {
+    font-size: 60px;
+    background-color: green;
+    color: #fff;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    right: 4%;
+  }
+
+  .menu {
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 55%;
+    z-index: 2;
+    background-color: green;
+  }
+
+  .menu ul {
+    margin-top: 10rem;
+  }
+
+  .menu ul li {
+    list-style: none;
+    text-align: center;
+  }
+
+  .menu li:hover {
+    font-weight: bold;
+  }
+
+  .menu ul li a {
+    display: block;
+    font-size: 28px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+  }
 }

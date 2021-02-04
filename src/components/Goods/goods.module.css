@@ -1,4 +1,50 @@
 .container {
-  height: 400px;
+  height: 1300px;
   background-color: #fff;
+  width: 100vw;
+}
+
+.goodsContainer1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 8em;
+}
+
+.goodsContainer2 {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 1rem;
+  margin-top: 3rem;
+}
+
+.img {
+  margin-bottom: 2em;
+}
+
+.captionWrap {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin: auto 0;
+}
+
+.caption {
+  font-size: 36px;
+}
+
+.tag {
+  font-size: 48px;
+  color: green;
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: 1750px;
+  }
 }

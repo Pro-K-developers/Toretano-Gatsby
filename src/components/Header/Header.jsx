@@ -16,16 +16,35 @@ const Header = () => {
     }
   `)
 
+  const [isOpen, setIsOpen] = React.useState(false)
+
+  const handleClick = () => {
+    setIsOpen(!isOpen)
+    console.log("isOpen:", isOpen)
+  }
+
   return (
   <div className={headerStyles.container}>
     <Img fixed={data.file.childImageSharp.fixed} className={headerStyles.logo}/>
     <ul className={headerStyles.nav}>
       <li><a href="#about-us">About us</a></li>
-      <li><a href=".container">Goods</a></li>
+      <li><a href="#goods">Goods</a></li>
       <li><a href="#feature">Feature</a></li>
       <li><a href="#access">Access</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <button className={headerStyles.button}　onClick={() => handleClick()}>≡</button>
+    {isOpen && 
+      <div className={headerStyles.menu}>
+        <ul>
+            <li><a href="#about-us">About us</a></li>
+            <li><a href="#goods">Goods</a></li>
+            <li><a href="#feature">Feature</a></li>
+            <li><a href="#access">Access</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    }
   </div>
   );
 }
