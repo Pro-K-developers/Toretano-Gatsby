@@ -8,7 +8,7 @@ const Top = () => {
     query {
       file(relativePath: { eq: "top PC.png" }) {
         childImageSharp {
-          fixed(width: 300) {
+          fixed(width: 1000) {
             ...GatsbyImageSharpFixed
           }
         }

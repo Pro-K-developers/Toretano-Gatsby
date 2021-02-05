@@ -33,10 +33,19 @@ const Header = () => {
       <li><a href="#access">Access</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <button className={headerStyles.button}　onClick={() => handleClick()}>≡</button>
-    {isOpen && 
+    {!isOpen && (
+      <button className={headerStyles.button} onClick={() => handleClick()}>
+        ≡
+      </button>
+      )}
+    {isOpen && (
+      <button className={headerStyles.button} onClick={() => handleClick()}>
+        ×
+      </button>
+      )}
+      {isOpen && (
       <div className={headerStyles.menu}>
-        <ul>
+        <ul onClick={() => handleClick()}>
             <li><a href="#about-us">About us</a></li>
             <li><a href="#goods">Goods</a></li>
             <li><a href="#feature">Feature</a></li>
@@ -44,7 +53,7 @@ const Header = () => {
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-    }
+      )}
   </div>
   );
 }

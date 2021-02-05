@@ -45,13 +45,14 @@
   }
 
   .button {
-    font-size: 60px;
+    font-size: 65px;
     background-color: green;
     color: #fff;
     z-index: 3;
     position: absolute;
     top: 0;
     right: 4%;
+    border: none;
   }
 
   .menu {
@@ -74,7 +75,7 @@
   }
 
   .menu li:hover {
-    font-weight: bold;
+    background: #308d30;
   }
 
   .menu ul li a {

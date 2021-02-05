@@ -1,5 +1,4 @@
 .container {
-  height: 800px;
   background-color: #eee;
   width: 100vw;
 }
@@ -24,12 +23,17 @@
 }
 
 .caption {
-  font-size: 22px;
   margin-bottom: 1em;
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    height: 1000px;
+  .caption {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .caption {
+    font-size: 16px;
   }
 }
