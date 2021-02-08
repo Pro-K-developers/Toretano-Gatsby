@@ -38,6 +38,12 @@ const Access = () => {
       <p className={accessStyles.station1}>アクセス</p>
       <p className={accessStyles.station2}>JR南武線『谷保』駅北口　徒歩５分</p>
       <hr></hr>
+
+      <img
+        className={accessStyles.map}
+        src="/static/253cabec8aacd6b60dad3910f1cba3a8/map.jpg"
+        alt=""
+      />
     </div>
   )
 }
