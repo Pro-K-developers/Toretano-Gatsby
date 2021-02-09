@@ -6,6 +6,10 @@
   align-items: center;
 }
 
+.logo {
+  width: 72px;
+}
+
 .nav li {
   width: 200px;
   font-size: 28px;
@@ -32,10 +36,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .logo {
-    width: 100px;
-  }
-
   .button {
     display: none;
   }
@@ -46,10 +46,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .logo {
-    width: 80px;
-  }
-
   .nav {
     visibility: hidden;
   }
