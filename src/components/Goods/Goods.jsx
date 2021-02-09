@@ -9,15 +9,15 @@ const Goods = () => {
     query {
       goods1:file(relativePath: { eq: "goods1.jpg" }) {
         childImageSharp {
-          fixed(width: 477  height: 360) {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       },
       goods2:file(relativePath: { eq: "goods2.jpg" }) {
         childImageSharp {
-          fixed(width: 477 height: 360) {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -29,7 +29,9 @@ const Goods = () => {
     <Title title="Goods" subtitle="商品" />
     <div className={goodsStyles.goodsContainer1}>
       <p className={goodsStyles.tagMobile}>くにたち野菜</p>
-      <Img className={goodsStyles.img} fixed={data.goods1.childImageSharp.fixed} />
+      <div className={goodsStyles.img}>
+        <Img fluid={data.goods1.childImageSharp.fluid} />
+      </div>
       <div className={goodsStyles.captionWrap}>
         <p className={goodsStyles.tagPc}>くにたち野菜</p>
         <p className={goodsStyles.caption}>
@@ -42,7 +44,9 @@ const Goods = () => {
     </div>
     <div className={goodsStyles.goodsContainer2}>
       <p className={goodsStyles.tagMobile}>物産</p>
-      <Img className={goodsStyles.img} fixed={data.goods2.childImageSharp.fixed} />
+      <div className={goodsStyles.img}>
+        <Img fluid={data.goods2.childImageSharp.fluid} />
+      </div>
       <div className={goodsStyles.captionWrap}>
         <p className={goodsStyles.tagPc}>物産</p>
         <p className={goodsStyles.caption}>

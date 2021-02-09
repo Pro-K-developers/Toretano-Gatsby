@@ -11,10 +11,6 @@
   margin-top: 3rem;
 }
 
-.img {
-  margin-bottom: 3em;
-}
-
 .captionWrap {
   text-align: center;
   width: 100%;
@@ -26,13 +22,24 @@
   margin-bottom: 1em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+  .img {
+    width: 637px;
+    height: 374px;
+  }
+
   .caption {
     font-size: 22px;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .img {
+    width: 345px;
+    height: 189.18px;
+    margin-bottom: 3em;
+  }
+
   .caption {
     font-size: 16px;
   }

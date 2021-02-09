@@ -24,12 +24,18 @@
 }
 
 .logo {
-  width: 100px;
-  border-radius: 100%;
   vertical-align: middle;
 }
 
+.logo img {
+  border-radius: 100%;
+}
+
 @media screen and (min-width: 768px) {
+  .logo {
+    width: 100px;
+  }
+
   .button {
     display: none;
   }
@@ -40,6 +46,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .logo {
+    width: 80px;
+  }
+
   .nav {
     visibility: hidden;
   }

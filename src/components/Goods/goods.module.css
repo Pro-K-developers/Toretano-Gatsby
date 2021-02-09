@@ -39,6 +39,11 @@
     font-size: 36px;
   }
 
+  .img {
+    width: 477px;
+    height: 360px;
+  }
+
   .goodsContainer1 {
     display: flex;
     flex-wrap: wrap;
@@ -69,6 +74,8 @@
   }
 
   .img {
+    width: 345px;
+    height: 188.68px;
     margin-bottom: 2em;
   }
 

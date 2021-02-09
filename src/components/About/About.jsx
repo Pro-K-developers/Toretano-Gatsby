@@ -9,8 +9,8 @@ const About = () => {
     query Query {
       file(relativePath: { eq: "about.jpg" }) {
         childImageSharp {
-          fixed(width: 637 height: 374) {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -35,7 +35,9 @@ const About = () => {
       {isOpen && <span>Open!</span>}
       {/* isOpenがtrueならば"&&"以降を表示するよ、という意味 */}
       <div className={aboutStyles.aboutContainer}>
-        <Img className={aboutStyles.img} fixed={data.file.childImageSharp.fixed} />
+        <div className={aboutStyles.img}>
+          <Img fluid={data.file.childImageSharp.fluid} />
+        </div>
         <div className={aboutStyles.captionWrap}>
           <p className={aboutStyles.caption}>
           「とれたの」は、とれたてのくにたち野菜と<br />こだわりの地域物産を販売するお店です。

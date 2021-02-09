@@ -6,10 +6,17 @@ import Img from "gatsby-image"
 const Top = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "top PC.png" }) {
+      topPc:file(relativePath: { eq: "top PC.png" }) {
         childImageSharp {
-          fixed(width: 1000) {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      },
+      topMobile:file(relativePath: { eq: "top mobile.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -18,7 +25,18 @@ const Top = () => {
 
   return (
   <div className={topStyles.container}>
-    <Img fixed={data.file.childImageSharp.fixed} className={topStyles.img} />
+    <div className={topStyles.imgPc}>
+      <Img fluid={data.topPc.childImageSharp.fluid} />
+    </div>
+    <div className={topStyles.imgMobile}>
+      <Img fluid={data.topMobile.childImageSharp.fluid} />
+    </div>
+    <div className={topStyles.topPc}>
+      <span >買い物に出会いを、<br/>&emsp;&emsp;生活に彩りを。</span>
+    </div>
+    <div className={topStyles.topMobile}>
+      <span>買い物に出会いを、<br/>&emsp;生活に彩りを。</span>
+    </div>
   </div>
   );
 }
