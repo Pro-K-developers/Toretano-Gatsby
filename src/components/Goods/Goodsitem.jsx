@@ -1,28 +1,8 @@
 import React from "react"
 import goodsStyles from "./goods.module.css"
-import Title from "../Title"
-import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const GoodsItem = ({tag,img,cap1,cap2,cap3}) => {
-  const data = useStaticQuery(graphql`
-    query {
-      goods1:file(relativePath: { eq: "goods1.jpg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      },
-      goods2:file(relativePath: { eq: "goods2.jpg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
+const GoodsItem = ({tag,img,cap1,cap2,cap3,isReverse}) => {
 
 return(
     <div 
@@ -44,6 +24,9 @@ return(
          <p className={goodsStyles.caption}>
          {cap3}
         </p>
+        <div className={goodsStyles.isReverse}>
+         {isReverse}
+        </div>
       </div>
     </div>
 )

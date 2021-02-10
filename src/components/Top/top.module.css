@@ -22,7 +22,7 @@
     font-family: Scada;
     font-style: italic;
     font-weight: bold;
-    font-size: 64px;
+    font-size: 4rem;
     line-height: 270px;
     position: absolute;
     left: 50%;
@@ -48,7 +48,7 @@
     font-family: Scada;
     font-style: italic;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 180px;
     color: #fff;
     position: absolute;

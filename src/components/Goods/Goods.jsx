@@ -2,7 +2,6 @@ import React from "react"
 import goodsStyles from "./goods.module.css"
 import Title from "../Title"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 import GoodsItem from "./Goodsitem"
 
 const Goods = () => {
@@ -40,8 +39,8 @@ const Goods = () => {
       img={data.goods2.childImageSharp.fluid}
       cap1="スタッフが選び抜いた全国の物産、"
       cap2="こだわりの国立市物産を販売。"
+      isReverse
     />
-    
   </div>
   )
 }
