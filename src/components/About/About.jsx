@@ -16,24 +16,10 @@ const About = () => {
       }
     }
   `)
-  const [isOpen, setIsOpen] = React.useState(false)
-  // const [stateの名前, stateを更新する関数] = React.useState(stateの初期値)
-  // 真偽値が入る変数の名前にはis〇〇というふうに名前つけがち
-  // https://reactjs.org/docs/hooks-state.html
-
-  const handleClick = () => {
-    // !true = false, !false = true. setIsOpen(isOpenにセットしたい値)
-    setIsOpen(!isOpen)
-    // 確認用のconsole.log 開発者ツールのConsoleタブで見られる
-    console.log("isOpen:", isOpen)
-  }
 
   return (
     <div className={aboutStyles.container} id="about-us">
       <Title title="About us" subtitle="とれたのについて" />
-      <button onClick={() => handleClick()}>Click me!</button>
-      {isOpen && <span>Open!</span>}
-      {/* isOpenがtrueならば"&&"以降を表示するよ、という意味 */}
       <div className={aboutStyles.aboutContainer}>
         <div className={aboutStyles.img}>
           <Img fluid={data.file.childImageSharp.fluid} />

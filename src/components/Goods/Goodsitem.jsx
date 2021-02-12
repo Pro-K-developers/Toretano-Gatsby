@@ -7,7 +7,7 @@ const GoodsItem = ({tag,img,cap1,cap2,cap3,isReverse}) => {
 return(
     <div 
     　className={goodsStyles.goodscontainer}
-    　style={isReverse && { flexDirection: "column-reverse" }}
+    　style={isReverse && { flexDirection: "row-reverse" }}
     >
       <p className={goodsStyles.tagMobile}>{tag}</p>
       <div className={goodsStyles.img}>
@@ -19,13 +19,13 @@ return(
           {cap1}
         </p>
         <p className={goodsStyles.caption}>
-         {cap2}
-         </p>
-         <p className={goodsStyles.caption}>
-         {cap3}
+          {cap2}
+        </p>
+        <p className={goodsStyles.caption}>
+          {cap3}
         </p>
         <div className={goodsStyles.isReverse}>
-         {isReverse}
+          {isReverse}
         </div>
       </div>
     </div>

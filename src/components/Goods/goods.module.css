@@ -68,4 +68,7 @@
     object-fit: cover;
     margin-bottom: 2em;
   }
+
+  .isReverse {
+  }
 }
