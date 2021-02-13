@@ -34,13 +34,23 @@ const Goods = () => {
       cap2="安心、安全、新鮮なくにたち野菜を"
       cap3="お届け。"
     />
-    <GoodsItem
-      tag="物産"
-      img={data.goods2.childImageSharp.fluid}
-      cap1="スタッフが選び抜いた全国の物産、"
-      cap2="こだわりの国立市物産を販売。"
-      isReverse
-    />
+    <div className={goodsStyles.containerPc}>
+      <GoodsItem
+        tag="物産"
+        img={data.goods2.childImageSharp.fluid}
+        cap1="スタッフが選び抜いた全国の物産、"
+        cap2="こだわりの国立市物産を販売。"
+        isReverse
+      />
+    </div>
+    <div className={goodsStyles.containerMobile}>
+      <GoodsItem
+        tag="物産"
+        img={data.goods2.childImageSharp.fluid}
+        cap1="スタッフが選び抜いた全国の物産、"
+        cap2="こだわりの国立市物産を販売。"
+      />
+    </div>
   </div>
   )
 }

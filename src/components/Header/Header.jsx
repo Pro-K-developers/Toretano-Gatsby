@@ -45,7 +45,7 @@ const Header = () => {
         ×
       </button>
       )}
-      {isOpen && (
+    {isOpen && (
       <div className={headerStyles.menu}>
         <ul onClick={() => handleClick()}>
             <li><a href="#about-us">About us</a></li>
@@ -55,7 +55,7 @@ const Header = () => {
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-      )}
+    )}
   </div>
   );
 }

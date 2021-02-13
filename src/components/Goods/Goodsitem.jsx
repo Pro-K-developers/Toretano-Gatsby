@@ -24,9 +24,6 @@ return(
         <p className={goodsStyles.caption}>
           {cap3}
         </p>
-        <div className={goodsStyles.isReverse}>
-          {isReverse}
-        </div>
       </div>
     </div>
 )

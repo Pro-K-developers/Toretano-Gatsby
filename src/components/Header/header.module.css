@@ -72,6 +72,7 @@
     left: 55%;
     z-index: 2;
     background-color: green;
+    transition: 0.5s;
   }
 
   .menu ul {

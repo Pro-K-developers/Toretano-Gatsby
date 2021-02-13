@@ -41,6 +41,10 @@
     justify-content: space-around;
     margin-bottom: 6rem;
   }
+
+  .containerMobile {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -69,6 +73,7 @@
     margin-bottom: 2em;
   }
 
-  .isReverse {
+  .containerPc {
+    display: none;
   }
 }
