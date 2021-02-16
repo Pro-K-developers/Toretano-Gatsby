@@ -1,6 +1,8 @@
 .container {
   height: 110px;
   background-color: green;
+  display: flex;
+  align-items: center;
 }
 .foot {
   display: block;
@@ -9,7 +11,8 @@
   font-size: 14px;
   line-height: 30px;
   margin-left: 72vw;
-  padding-top: 15px;
+
+  flex: 1;
 }
 .foot_mobile {
   display: none;
@@ -18,7 +21,8 @@
   font-size: 3vw;
   line-height: 6vw;
   text-align: center;
-  padding-top: 15px;
+
+  flex: 1;
 }
 @media screen and (max-width: 560px) {
   .foot {

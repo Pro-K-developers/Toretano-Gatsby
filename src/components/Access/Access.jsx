@@ -37,6 +37,9 @@ const Access = () => {
       <hr></hr>
       <p className={accessStyles.station1}>アクセス</p>
       <p className={accessStyles.station2}>JR南武線『谷保』駅北口　徒歩５分</p>
+      <p className={accessStyles.station2_mobile}>
+        JR南武線『谷保』駅北口　徒歩５分
+      </p>
       <hr></hr>
 
       <img

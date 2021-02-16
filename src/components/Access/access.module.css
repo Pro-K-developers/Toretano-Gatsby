@@ -21,7 +21,7 @@ hr {
 .shopname_mobile {
   display: none;
   text-align: center;
-  font-size: 24px;
+  font-size: 5vw;
   margin-top: 40px;
   margin-bottom: 30px;
 }
@@ -39,7 +39,7 @@ hr {
 .time2_mobile {
   display: none;
   text-align: center;
-  font-size: 20px;
+  font-size: 4vw;
   line-height: 43px;
 }
 
@@ -56,7 +56,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
-  font-size: 24px;
+  font-size: 5vw;
   color: green;
 }
 .address1 {
@@ -76,7 +76,7 @@ hr {
   display: none;
   line-height: 43px;
   text-align: center;
-  font-size: 20px;
+  font-size: 4vw;
   margin-bottom: 20px;
 }
 .station1 {
@@ -86,8 +86,15 @@ hr {
   margin-bottom: 40px;
 }
 .station2 {
+  display: block;
   text-align: center;
   font-size: 20px;
+  margin-bottom: 20px;
+}
+.station2_mobile {
+  display: none;
+  text-align: center;
+  font-size: 4vw;
   margin-bottom: 20px;
 }
 .map {
@@ -100,13 +107,15 @@ hr {
   .shopname,
   .time2,
   .time3,
-  .address2 {
+  .address2,
+  .station2 {
     display: none;
   }
   .shopname_mobile,
   .time2_mobile,
   .time3_mobile,
-  .address2_mobile {
+  .address2_mobile,
+  .station2_mobile {
     display: block;
   }
 }
