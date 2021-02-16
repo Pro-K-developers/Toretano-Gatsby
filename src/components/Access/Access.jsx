@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 
 const Access = () => {
   return (
-    <div className={accessStyles.container}>
+    <div className={accessStyles.container} id="access">
       <Title title="Access" subtitle="店舗情報" />
       <h1 className={accessStyles.shopname}>
         くにたち野菜と地域物産の店「とれたの」

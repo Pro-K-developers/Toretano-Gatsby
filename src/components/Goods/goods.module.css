@@ -1,4 +1,79 @@
-.container {
-  height: 400px;
-  background-color: #fff;
+.goodscontainer {
+  margin: 1rem;
+  margin-top: 3rem;
+}
+
+.captionWrap {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin: auto 0;
+}
+
+.tagMobile,
+.tagPc {
+  color: green;
+  margin-bottom: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  .tagPc {
+    font-size: 48px;
+  }
+
+  .tagMobile {
+    display: none;
+  }
+
+  .caption {
+    font-size: 36px;
+  }
+
+  .img {
+    width: 477px;
+    object-fit: cover;
+  }
+
+  .goodscontainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 6rem;
+  }
+
+  .containerMobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .goodscontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tagMobile {
+    font-size: 24px;
+    margin-top: 1.5em;
+  }
+
+  .tagPc {
+    display: none;
+  }
+
+  .caption {
+    font-size: 18px;
+  }
+
+  .img {
+    width: 345px;
+    object-fit: cover;
+    margin-bottom: 2em;
+  }
+
+  .containerPc {
+    display: none;
+  }
 }

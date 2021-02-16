@@ -7,7 +7,7 @@ import { FacebookProvider, Page } from "react-facebook"
 
 const Contact = () => {
   return (
-    <div className={contactStyles.container}>
+    <div className={contactStyles.container} id="contact">
       <Title title="Contact" subtitle="もっと知りたい方はこちらも" />
 
       <ul className={contactStyles.a}>

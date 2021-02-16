@@ -1,4 +1,63 @@
 .container {
-  height: 400px;
   background-color: #fff;
+}
+
+.imgPc,
+.imgMobile {
+  width: 100vw;
+  padding-top: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .imgMobile {
+    display: none;
+  }
+
+  .topPc {
+    position: relative;
+  }
+
+  .topPc span {
+    white-space: nowrap;
+    color: #fff;
+    font-family: Scada;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 270px;
+    position: absolute;
+    left: 52%;
+    transform: translateY(-104%);
+  }
+
+  .topMobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .imgPc {
+    display: none;
+  }
+
+  .topMobile {
+    position: relative;
+  }
+
+  .topMobile span {
+    white-space: nowrap;
+    font-family: Scada;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 180px;
+    color: #fff;
+    position: absolute;
+    left: 3%;
+    transform: translateY(-102%);
+  }
+
+  .topPc {
+    display: none;
+  }
 }

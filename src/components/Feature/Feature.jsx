@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 
 const Feature = () => {
   return (
-    <div className={featureStyles.container}>
+    <div className={featureStyles.container} id="feature">
       <Title title="Feature" subtitle="イチオシ" />
       <p className={featureStyles.imagewrap}>
         <img src="/static/e2139543bde5140a5326f6e1942872d3/honey4.png" alt="" />
