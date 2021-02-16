@@ -1,4 +1,34 @@
 .container {
-  height: 100px;
+  height: 110px;
   background-color: green;
+  display: flex;
+  align-items: center;
+}
+.foot {
+  display: block;
+  white-space: nowrap;
+  color: white;
+  font-size: 14px;
+  line-height: 30px;
+  margin-left: 72vw;
+
+  flex: 1;
+}
+.foot_mobile {
+  display: none;
+  white-space: nowrap;
+  color: white;
+  font-size: 3vw;
+  line-height: 6vw;
+  text-align: center;
+
+  flex: 1;
+}
+@media screen and (max-width: 560px) {
+  .foot {
+    display: none;
+  }
+  .foot_mobile {
+    display: block;
+  }
 }

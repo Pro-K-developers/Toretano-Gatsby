@@ -1,4 +1,45 @@
 .container {
-  height: 400px;
-  background-color: #eee;
+  background-color: white;
+}
+
+.honey_pc {
+  display: block;
+  text-align: center;
+  font-size: 36px;
+  margin-left: 120px;
+  margin-top: 80px;
+}
+.honey_mobile {
+  margin-top: 11vw;
+  display: none;
+  text-align: center;
+  font-size: 5vw;
+}
+
+.imagewrap {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.imagewrap img {
+  width: 200px;
+  height: auto;
+  display: inline-block;
+}
+.imagemobile {
+  display: none;
+  text-align: center;
+  width: 92vw;
+  margin: 0 auto;
+  margin-top: 8.3vw;
+}
+@media screen and (max-width: 560px) {
+  .honey_pc,
+  .imagewrap {
+    display: none;
+  }
+  .honey_mobile,
+  .imagemobile {
+    display: block;
+  }
 }
