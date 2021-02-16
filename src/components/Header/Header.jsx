@@ -24,40 +24,60 @@ const Header = () => {
   }
 
   return (
-  <div className={headerStyles.container}>
-    <div className={headerStyles.logo}>
-      <Img fixed={data.file.childImageSharp.fixed} />
-    </div>
-    <ul className={headerStyles.nav}>
-      <li><a href="#about-us">About us</a></li>
-      <li><a href="#goods">Goods</a></li>
-      <li><a href="#feature">Feature</a></li>
-      <li><a href="#access">Access</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    {!isOpen && (
-      <button className={headerStyles.button} onClick={() => handleClick()}>
-        ≡
-      </button>
-      )}
-    {isOpen && (
-      <button className={headerStyles.button} onClick={() => handleClick()}>
-        ×
-      </button>
-      )}
-    {isOpen && (
-      <div className={headerStyles.menu}>
-        <ul onClick={() => handleClick()}>
-            <li><a href="#about-us">About us</a></li>
-            <li><a href="#goods">Goods</a></li>
-            <li><a href="#feature">Feature</a></li>
-            <li><a href="#access">Access</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+    <div className={headerStyles.container}>
+      <div className={headerStyles.logo}>
+        <Img fixed={data.file.childImageSharp.fixed} />
       </div>
-    )}
-  </div>
-  );
+      <ul className={headerStyles.nav}>
+        <li>
+          <a href="#about-us">About us</a>
+        </li>
+        <li>
+          <a href="#goods">Goods</a>
+        </li>
+        <li>
+          <a href="#feature">Feature</a>
+        </li>
+        <li>
+          <a href="#access">Access</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+      {!isOpen && (
+        <button className={headerStyles.button} onClick={() => handleClick()}>
+          ≡
+        </button>
+      )}
+      {isOpen && (
+        <button className={headerStyles.button} onClick={() => handleClick()}>
+          ×
+        </button>
+      )}
+      {isOpen && (
+        <div className={headerStyles.menu}>
+          <ul onClick={() => handleClick()}>
+            <li>
+              <a href="#about-us">About us</a>
+            </li>
+            <li>
+              <a href="#goods">Goods</a>
+            </li>
+            <li>
+              <a href="#feature">Feature</a>
+            </li>
+            <li>
+              <a href="#access">Access</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      )}
+    </div>
+  )
 }
 
 export default Header

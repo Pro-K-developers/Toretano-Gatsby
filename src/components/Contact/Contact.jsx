@@ -1,8 +1,6 @@
 import React from "react"
 import contactStyles from "./contact.module.css"
 import Title from "../Title"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 import { FacebookProvider, Page } from "react-facebook"
 
 const Contact = () => {

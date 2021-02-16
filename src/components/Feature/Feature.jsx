@@ -1,8 +1,6 @@
 import React from "react"
 import featureStyles from "./feature.module.css"
 import Title from "../Title"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 
 const Feature = () => {
   return (
