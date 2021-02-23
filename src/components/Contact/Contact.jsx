@@ -10,21 +10,39 @@ const Contact = () => {
 
       <ul className={contactStyles.a}>
         <li>
-          Facabook
-          <FacebookProvider appId="123456789">
-            <Page href="https://www.facebook.com/toretano/" tabs="timeline" />
-          </FacebookProvider>
+          <a
+            href="https://www.facebook.com/toretano/"
+            className={contactStyles.Facebook_a}
+          >
+            Facebook
+          </a>
         </li>
-        <li>Instagram</li>
+        <li>
+          <a
+            href="https://www.instagram.com/toretano/"
+            className={contactStyles.Instagram_a}
+          >
+            Instagram
+          </a>
+        </li>
       </ul>
       <ul className={contactStyles.b}>
         <li>
-          Facebook
-          <FacebookProvider appId="123456789">
-            <Page href="https://www.facebook.com/toretano/" tabs="timeline" />
-          </FacebookProvider>
+          <a
+            href="https://www.facebook.com/toretano/"
+            className={contactStyles.Facebook_b}
+          >
+            Facebook
+          </a>
         </li>
-        <li>Instagram</li>
+        <li>
+          <a
+            href="https://www.instagram.com/toretano/"
+            className={contactStyles.Instagram_b}
+          >
+            Instagram
+          </a>
+        </li>
       </ul>
     </div>
   )
